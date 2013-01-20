@@ -30,4 +30,5 @@ remote_directory node['chef_handler']['handler_path'] do
     recursive true
   end
   action :nothing
+  purge true
 end.run_action(:create)
